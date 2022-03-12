@@ -26,10 +26,10 @@ export default function Dashbaoard() {
                         {
                             books.map(books => (
                                 <tr key={books.id}>
-                                    <td>{books.name}</td>
+                                    <td>{books.bookName}</td>
                                     <td>{books.numberOfPages}</td>
-                                    <td>{books.writer.name}</td>
-                                    <td>{books.writer.lastname}</td>
+                                    <td>{books.writer.writerName}</td>
+                                    <td>{books.writer.writerLastName}</td>
                                 </tr>
                             ))
                         }
