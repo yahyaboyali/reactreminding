@@ -16,10 +16,10 @@ export default function Dashbaoard() {
                 <Table striped bordered hover>
                     <thead>
                         <tr>
-                            <th>bookName</th>
+                            <th>kitap adı</th>
                             <th>sayfa sayısı</th>
-                            <th>writer name</th>
-                            <th>writer lastname</th>
+                            <th>yazar adı</th>
+                            <th>yazar soyadı</th>
                         </tr>
                     </thead>
                     <tbody>
