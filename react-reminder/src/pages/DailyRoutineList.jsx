@@ -13,7 +13,6 @@ export default function DailyRoutineList() {
 
   return (
     <Container>
-
       <div>
         <Table striped bordered hover>
           <thead>
@@ -111,30 +110,6 @@ export default function DailyRoutineList() {
           </tbody>
         </Table>
       </div>
-      {/* <div>
-        <Table striped bordered hover>
-          <thead>
-            <tr>
-              <th>İsim</th>
-              <th>soy isim</th>
-              <th>kitap adı</th>
-            </tr>
-          </thead>
-          <tbody>
-            {
-              personWithBooksWithWriterWithdailyRoutinesDtos.map((personWithBooksWithWriterWithdailyRoutinesDtos, index) => (
-                <tr key={index}>
-                  <td>{personWithBooksWithWriterWithdailyRoutinesDtos.personName}</td>
-                  <td>{personWithBooksWithWriterWithdailyRoutinesDtos.personName}</td>
-                  <td>{personWithBooksWithWriterWithdailyRoutinesDtos.personLastName}</td>
-                  <td>{personWithBooksWithWriterWithdailyRoutinesDtos.bookName}</td>
-                  <td>{personWithBooksWithWriterWithdailyRoutinesDtos.numberOfPages}</td>
-                </tr>
-              ))
-            }
-          </tbody>
-        </Table>
-      </div> */}
     </Container>
   )
 }
