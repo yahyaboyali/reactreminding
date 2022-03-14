@@ -3,7 +3,7 @@ import { Dropdown } from 'react-bootstrap';
 
 export default function SignedIn() {
     return (
-        <div>
+        <div style={{marginRight:'1rem'}}>
             <div>
                 <Dropdown>
                     <Dropdown.Toggle variant="secondary" icon="info">

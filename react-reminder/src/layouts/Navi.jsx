@@ -16,7 +16,7 @@ export default function Navi() {
                         <Nav.Link >Şimdilik boş</Nav.Link>
                         <Nav.Link >Şimdilik boş</Nav.Link>
                     </Nav>
-                    <SignedIn style={{ margin: "10px"}}/>
+                    <SignedIn/>
                     <Button variant="primary">giriş yap</Button>
                 </Navbar.Collapse>
             </Container>
