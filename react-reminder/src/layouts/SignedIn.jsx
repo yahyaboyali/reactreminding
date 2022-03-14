@@ -7,8 +7,7 @@ export default function SignedIn() {
             <div>
                 <Dropdown>
                     <Dropdown.Toggle variant="secondary" icon="info">
-                        Dropdown Button
-                        
+                        user
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                     
