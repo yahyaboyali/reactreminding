@@ -5,7 +5,7 @@ export default function Navi() {
   return (
     <Navbar bg="dark" variant='dark' expand="sm">
             <Container fluid="md">
-                <Navbar.Brand>react</Navbar.Brand>
+                <Navbar.Brand>Kitap takip</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -13,11 +13,11 @@ export default function Navi() {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link >Home</Nav.Link>
-                        <Nav.Link >Link</Nav.Link>
+                        <Nav.Link >Şimdilik boş</Nav.Link>
+                        <Nav.Link >Şimdilik boş</Nav.Link>
                     </Nav>
                     <SignedIn style={{ margin: "10px"}}/>
-                    <Button variant="primary">Sign Up</Button>
+                    <Button variant="primary">giriş yap</Button>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
