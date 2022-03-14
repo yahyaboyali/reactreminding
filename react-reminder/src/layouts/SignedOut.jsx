@@ -1,10 +1,11 @@
-import { Button } from 'bootstrap'
+import { Button } from 'react-bootstrap';
 import React from 'react'
 
-export default function SignedOut() {
+export default function SignedOut(props) {
+
   return (
     <div>
-        <Button>Giriş yap</Button>
+        <Button style={{marginRight:'1rem'}} onClick={props.signIn}>Giriş yap</Button>
         <Button>Kayıt ol</Button>
     </div>
   )

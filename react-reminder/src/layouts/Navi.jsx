@@ -1,7 +1,17 @@
-import React from 'react'
-import { Container,Button,Nav,Navbar} from 'react-bootstrap';
+import React, {useState} from 'react'
+import { Container,Nav,Navbar} from 'react-bootstrap';
 import SignedIn from './SignedIn';
+import SignedOut from './SignedOut';
 export default function Navi() {
+
+    const [isAuthenticated,setIsAuthenticated] =useState(true)
+
+    function handleSignOut() {
+        setIsAuthenticated(false)
+    }
+    function handleSignIn() {
+        setIsAuthenticated(true)
+    }
   return (
     <Navbar bg="dark" variant='dark' expand="sm">
             <Container fluid="md">
@@ -16,8 +26,10 @@ export default function Navi() {
                         <Nav.Link >Şimdilik boş</Nav.Link>
                         <Nav.Link >Şimdilik boş</Nav.Link>
                     </Nav>
-                    <SignedIn/>
-                    <Button variant="primary">giriş yap</Button>
+                    {
+                        isAuthenticated?<SignedIn signOut={handleSignOut}/>
+                        :<SignedOut signIn={handleSignIn}/>
+                    }
                 </Navbar.Collapse>
             </Container>
         </Navbar>
