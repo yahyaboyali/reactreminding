@@ -1,15 +1,21 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import BookDetail from '../pages/BookDetail'
 import BookList from '../pages/BookList'
+import DailyRoutineDetail from '../pages/DailyRoutineDetail'
 import DailyRoutineList from '../pages/DailyRoutineList'
-import Navi from './Navi'
 export default function Dashbaoard() {
-  
-    return (
+
+  return (
     <div>
-      <Navi/>
-      <BookList/>
-      <DailyRoutineList/>
+      <Routes>
+        <Route path="/" element={<BookList />} exact />
+        <Route path='/DailyRoutines' element={<DailyRoutineList/>} exact/>
+        <Route path='/books/:id' element={<BookDetail/>}/>
+        <Route path='/DailyRoutineDetail' element={<DailyRoutineDetail/>}/>
+      </Routes>
+
     </div>
-    
+
   )
 }

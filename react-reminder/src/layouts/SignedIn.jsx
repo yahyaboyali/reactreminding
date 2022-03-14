@@ -1,12 +1,14 @@
 import React from 'react'
 import { Dropdown, Button, ButtonGroup } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import DailyRoutineDetail from '../pages/DailyRoutineDetail';
 
 export default function SignedIn(props) {
     return (
         <div style={{ marginRight: '1rem' }}>
             <div>
                 <Dropdown as={ButtonGroup}>
-                    <Button  variant="secondary" >
+                    <Button variant="secondary" >
                         Yahya
                     </Button>
                     <Dropdown.Toggle split variant="secondary" >
@@ -16,7 +18,10 @@ export default function SignedIn(props) {
                     <Dropdown.Menu>
 
                         <Dropdown.Item >
-                            hesabım</Dropdown.Item>
+                            hesabım
+                        </Dropdown.Item>
+                        <Dropdown.Item as={Link} to="DailyRoutineDetail">daily routines</Dropdown.Item>
+                        <Dropdown.Divider/>
                         <Dropdown.Item onClick={props.signOut}>Çıkış yap</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
