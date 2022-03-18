@@ -11,8 +11,8 @@ export default function Dashbaoard() {
       <Routes>
         <Route path="/" element={<BookList />} exact />
         <Route path='/DailyRoutines' element={<DailyRoutineList/>} exact/>
-        <Route path='/books/:id' element={<BookDetail/>}/>
-        <Route path='/DailyRoutineDetail' element={<DailyRoutineDetail/>}/>
+        <Route exact path='/books/:id' element={<BookDetail/>}/>
+        <Route exact path='/DailyRoutineDetail/:personName' element={<DailyRoutineDetail/>}/>
       </Routes>
 
     </div>

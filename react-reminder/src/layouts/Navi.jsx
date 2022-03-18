@@ -2,11 +2,11 @@ import React, {useState} from 'react'
 import { Container,Nav,Navbar} from 'react-bootstrap';
 import SignedIn from './SignedIn';
 import SignedOut from './SignedOut';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
+
 export default function Navi() {
-
+   const personName="yahya"
     const [isAuthenticated,setIsAuthenticated] =useState(true)
-
     function handleSignOut() {
         setIsAuthenticated(false)
     }
@@ -26,8 +26,7 @@ export default function Navi() {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link >Şimdilik boş</Nav.Link>
-                        <Nav.Link >Şimdilik boş</Nav.Link>
+                        <Nav.Link as={Link} to={`/DailyRoutines/`}>genel routine</Nav.Link>
                     </Nav>
                     {
                         isAuthenticated?<SignedIn signOut={handleSignOut}/>

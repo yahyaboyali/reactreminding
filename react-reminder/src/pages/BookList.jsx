@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Container, Table } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import BookService from '../services/BookServices';
 
 export default function Dashbaoard() {
@@ -26,7 +27,7 @@ export default function Dashbaoard() {
                         {
                             books.map(books => (
                                 <tr key={books.id}>
-                                    <td>{books.bookName}</td>
+                                    <td><Link to={`/books/${books.id}`}>{books.bookName}</Link></td>
                                     <td>{books.numberOfPages}</td>
                                     <td>{books.writer.writerName}</td>
                                     <td>{books.writer.writerLastName}</td>

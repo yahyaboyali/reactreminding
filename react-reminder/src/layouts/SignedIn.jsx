@@ -1,9 +1,9 @@
 import React from 'react'
 import { Dropdown, Button, ButtonGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import DailyRoutineDetail from '../pages/DailyRoutineDetail';
 
 export default function SignedIn(props) {
+    const personName = "yahya"
     return (
         <div style={{ marginRight: '1rem' }}>
             <div>
@@ -20,7 +20,7 @@ export default function SignedIn(props) {
                         <Dropdown.Item >
                             hesabım
                         </Dropdown.Item>
-                        <Dropdown.Item as={Link} to="DailyRoutineDetail">daily routines</Dropdown.Item>
+                        <Dropdown.Item as={Link} to={`/DailyRoutineDetail/${personName}`}>daily routines</Dropdown.Item>
                         <Dropdown.Divider/>
                         <Dropdown.Item onClick={props.signOut}>Çıkış yap</Dropdown.Item>
                     </Dropdown.Menu>
